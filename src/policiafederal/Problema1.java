@@ -9,7 +9,7 @@ Find the sum of all the multiples of 3 or 5 below 1000.*/
 public class Problema1 {
     private int sum,contador;
     public void calculos(){    
-        while(contador<20){               // Repetidor que vai varrer os numeros de 0 a 1000
+        while(contador<1000){               // Repetidor que vai varrer os numeros de 0 a 1000
             
             if((contador%3)==0){            // Checando se o valor do contador de 0 a 1000 e divisivel exato por 3.
                 sum=sum+contador;           // Se for, ele faz a soma do valor do contador.
