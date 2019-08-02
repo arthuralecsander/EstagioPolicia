@@ -8,22 +8,33 @@
 
 public class Problema10 {
 
-    int sum, contador = 2, numD;
+    long sum;
+    int contador = 2, numD,i;
+    boolean numDExit;
 
     public void primos() {
 
         while (contador < 2000000) {
+            numDExit = true;
             numD = 0; //Numero de divisores
-            for (int i = 1; i <= contador; i++) { //for para verificar a quantidade de divisores do numero
-                if (contador % i == 0) {
+            i = 1;
+             
+                while(i<=contador && numDExit){ //for para verificar a quantidade de divisores do numero
+                    if (contador % i == 0) {
                     numD++; // incremento do valor de divisores
+                    if (numD==3) {
+                        numDExit = false;
+                    }
                 }
-            }
+                    i++;
+                }
+                
+            
             if (numD == 2) { //se o numero de divisor for iqual a 2, ele ira ser primo, divisivel apenas por 1 e ele mesmo.
                 sum = sum + contador;
             } 
             contador++;
-            if(contador%10000==0){ //um if apenas para mostrar na tela que ainda esta efetuando os calculos
+            if(contador%100000==0){ //um if apenas para mostrar na tela que ainda esta efetuando os calculos
                 System.out.println("Calculando....");
             }
         }
@@ -32,12 +43,18 @@ public class Problema10 {
     public void primos2() { //Mesma teoria do metodo de cima, apenas com um numero maior.
 
         while (contador < 20000) {
-            numD = 0;
-            for (int i = 1; i <= contador; i++) {
-                if (contador % i == 0) {
-                    numD++;
+            numDExit = true;
+            numD = 0; //Numero de divisores
+            i = 1;
+            while(i<=contador && numDExit){ //for para verificar a quantidade de divisores do numero
+                    if (contador % i == 0) {
+                    numD++; // incremento do valor de divisores
+                    if (numD==3) {
+                        numDExit = false;
+                    }
                 }
-            }
+                    i++;
+                }
             if (numD == 2) {
                 sum = sum + contador;
             } 
