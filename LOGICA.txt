@@ -1,0 +1,18 @@
+Link: https://projecteuler.net/archives
+
+Problemas escolhidos 1 e 10
+
+Problema 1
+Utilizei um while para fazer a varredura de todos os numeros ate 999, pois pedia abaixo de 1000.
+Utilizei um if para checar se era divisivel sem sobra por 3, isso significa que o numero e multiplo. Em seguida fiz a soma de um acumulador com o contador, assim fazendo uma soma com o valor geral mais o novo valor.
+Com o mesmo pensamendo da anterior fiz com o valor de 5.
+Fiz o programa baseado no valor ate menor que 10 e 20, me retornou os valores corretos.
+
+Problema 10
+Utilizei um contador ate menor que valor de 2000000
+Utilizei um for em seguida para que eu pudesse checar quantos divisores o numero possuiria.
+Se o numero de divisor for exatos 2, o numero seria primo e entao fiz a soma do acumulador com o contador, assim fazendo uma soma com o valor geral mais o novo valor.
+Na mesma classe fiz um segundo metodo, pois o valor de 2000000 estava muito grande e demorando alguns minutos para retornar o valor. entao utilizei o mesmo metodo apenas diminuindo o valor para apresentar um valor final rapido.
+
+Main
+Na main fiz um menu, para auxiliar na navegacao entre as classes que fiz.
